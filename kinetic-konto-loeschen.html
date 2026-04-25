@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Konto und Daten löschen | KINETIC / Kalofit</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0c0e12;
+        --panel: #171c24;
+        --text: #f4f7fb;
+        --muted: #a0abb8;
+        --line: #283140;
+        --accent: #d8ff1f;
+        --danger: #ff7f7f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(180deg, #0a0c10 0%, var(--bg) 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(840px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 80px;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.2;
+        margin: 0 0 16px;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      .panel {
+        background: rgba(23, 28, 36, 0.92);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 24px;
+        margin-top: 20px;
+      }
+
+      .danger {
+        border-left: 4px solid var(--danger);
+        padding-left: 16px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      code {
+        color: var(--accent);
+        font-family: Consolas, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>KINETIC Konto und Daten löschen</h1>
+      <p>
+        Nutzer können die Löschung ihres KINETIC-Kontos und der damit
+        verbundenen gespeicherten Daten anfordern.
+      </p>
+
+      <section class="panel">
+        <h2>Was gelöscht werden soll</h2>
+        <ul>
+          <li>Konto- und Login-Zuordnung in KINETIC</li>
+          <li>Profil- und Zielwerte</li>
+          <li>Mahlzeiten und Ernährungsdaten</li>
+          <li>Workouts und Aktivitätsdaten, soweit in KINETIC gespeichert</li>
+          <li>Supplementpläne und Supplement-Logs</li>
+          <li>Gespeicherte Fitness- und Health-Daten, soweit sie in KINETIC gespeichert sind</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Was ggf. nicht sofort gelöscht wird</h2>
+        <ul>
+          <li>rechtlich notwendige Nachweise oder sicherheitsrelevante Restdaten</li>
+          <li>technische Backups oder kurzzeitige Wiederherstellungsstände innerhalb üblicher Backup-Fristen</li>
+          <li>Daten, die nicht eindeutig einem Nutzer zugeordnet werden können, bis die technische Prüfung abgeschlossen ist</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>So stellst du die Löschanfrage</h2>
+        <p>
+          Sende bitte eine E-Mail an <strong>TODO: Support-E-Mail eintragen</strong>.
+        </p>
+        <p>
+          <strong>Betreff:</strong> Konto-Löschung KINETIC
+        </p>
+        <p>
+          Bitte nenne in deiner Anfrage die E-Mail-Adresse, mit der dein
+          KINETIC-Konto registriert ist, damit die Anfrage deinem Account
+          zugeordnet werden kann.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Bearbeitungszeit</h2>
+        <p>
+          Löschanfragen werden in der Regel innerhalb von 30 Tagen bearbeitet,
+          sofern keine gesetzlichen oder sicherheitsrelevanten Gründe
+          entgegenstehen.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>In-App erreichbar</h2>
+        <p>
+          Die Löschanfrage ist auch direkt in der App erreichbar unter
+          <strong>Profil &gt; Einstellungen / Datenschutz &gt; Konto und Daten löschen</strong>.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Wichtiger Hinweis</h2>
+        <p class="danger">
+          Diese Seite beschreibt aktuell eine Löschanfrage. Sie behauptet keine
+          sofortige vollautomatische Backend-Löschung, solange diese Funktion
+          serverseitig nicht produktiv bereitsteht.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Technische Einbindung in die App</h2>
+        <p>
+          Für die mobile App und die Google Play Console ist die URL über
+          <code>EXPO_PUBLIC_DELETE_ACCOUNT_URL</code> vorgesehen. Erst nach dem
+          Veröffentlichen dieser Seite sollte die echte URL eingetragen werden.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

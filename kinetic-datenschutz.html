@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Datenschutzerklärung | KINETIC / Kalofit</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0c0e12;
+        --panel: #171c24;
+        --text: #f4f7fb;
+        --muted: #a0abb8;
+        --line: #283140;
+        --accent: #d8ff1f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(180deg, #0a0c10 0%, var(--bg) 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(880px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 80px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+        margin: 0 0 16px;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        margin-top: 32px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      .panel {
+        background: rgba(23, 28, 36, 0.92);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 24px;
+        margin-top: 20px;
+      }
+
+      .meta {
+        display: grid;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .meta strong,
+      a {
+        color: var(--text);
+      }
+
+      .notice {
+        border-left: 4px solid var(--accent);
+        padding-left: 16px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      code {
+        color: var(--accent);
+        font-family: Consolas, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Datenschutzerklärung für KINETIC / Kalofit</h1>
+      <p class="notice">
+        Diese Seite ist als veröffentlichbare Vorlage gedacht. Vor dem Livegang
+        bitte Betreiberdaten, Support-E-Mail und die finale Domain ergänzen.
+      </p>
+
+      <section class="panel">
+        <h2>1. Verantwortlicher</h2>
+        <div class="meta">
+          <div><strong>App:</strong> KINETIC / Kalofit</div>
+          <div><strong>Betreiber:</strong> TODO: Betreiber / Firma / Ansprechpartner eintragen</div>
+          <div><strong>E-Mail:</strong> TODO: Support-E-Mail eintragen</div>
+          <div><strong>Webseite:</strong> TODO: finale Domain eintragen</div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>2. Welche Daten verarbeitet werden</h2>
+        <ul>
+          <li>E-Mail-Adresse und Login-Daten für Kontoerstellung und Anmeldung</li>
+          <li>Profildaten wie Name, Gewicht, Größe, Geschlecht, Ziele und Aktivitätslevel</li>
+          <li>Ernährungsdaten und Mahlzeiten, inklusive Kalorien- und Makroangaben</li>
+          <li>Workoutdaten wie Titel, Dauer, Intensität, Kategorie und Verlauf</li>
+          <li>Supplementdaten wie Pläne, Einnahmezeiten und Einnahme-Logs</li>
+          <li>Optionale Health- und Fitnessdaten wie Schritte, Distanz, Aktivkalorien, Schlaf, Herzfrequenz und Workout-Zusammenfassungen, sofern vom Nutzer freigegeben</li>
+          <li>Optionale Fotos, wenn der Nutzer Bilder für Profil oder Meal-/AI-Analyse hochlädt</li>
+          <li>Lokale Einstellungen und gespeicherte Komfortfunktionen auf dem Gerät</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>3. Zweck der Verarbeitung</h2>
+        <ul>
+          <li>Bereitstellung deines Nutzerkontos und deiner App-Funktionen</li>
+          <li>Berechnung und Darstellung von Kalorien, Makros, Aktivität und Fortschritt</li>
+          <li>Speicherung von Mahlzeiten, Workouts, Supplements und Profildaten</li>
+          <li>Synchronisierung zwischen App und Cloud-Backend</li>
+          <li>Optionale Auswertung von Fotos und Texteingaben für KI-gestützte Schätzungen</li>
+          <li>Verbesserung der persönlichen Übersicht und Routinen in der App</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>4. Eingesetzte Dienste</h2>
+        <p>
+          KINETIC nutzt <strong>Supabase</strong> als Backend für Authentifizierung
+          und Datenbankfunktionen. Wenn KI-Funktionen aktiv vom Nutzer ausgelöst
+          werden, können Inhalte zusätzlich an einen KI-Anbieter wie
+          <strong>Google Gemini</strong> übermittelt werden.
+        </p>
+        <p>
+          Wenn der Nutzer einen eigenen API-Schlüssel für KI-Funktionen
+          hinterlegt, wird dieser nach aktuellem App-Stand lokal auf dem Gerät
+          gespeichert und nicht als fest eingebauter geheimer Schlüssel mit der
+          App ausgeliefert.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>5. Health- und Fitnessdaten</h2>
+        <p>
+          Sofern du Health Connect oder Apple Health freigibst, kann KINETIC
+          Gesundheits- und Fitnessdaten lesen, um Aktivität, Tagesziele und
+          Auswertungen genauer darzustellen. Diese Funktionen sind optional.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>6. Fotos und KI-Analyse</h2>
+        <p>
+          Wenn du Fotos für die Essensanalyse hochlädst, werden diese nur im
+          Zusammenhang mit der von dir ausgelösten Analyse verarbeitet. Die
+          Schätzung von Kalorien und Nährwerten ist eine Hilfsfunktion und keine
+          garantierte oder medizinisch genaue Auswertung.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>7. Datenlöschung</h2>
+        <p>
+          Nutzer können die Löschung ihres Kontos und der zugeordneten
+          gespeicherten App-Daten über den In-App-Pfad
+          <strong>Profil &gt; Einstellungen / Datenschutz &gt; Konto und Daten löschen</strong>
+          anfragen oder die externe Löschseite nutzen.
+        </p>
+        <p>
+          Bei einer Löschung sollen insbesondere Profil-, Mahlzeiten-, Workout-
+          und Supplementdaten entfernt werden. Technisch oder rechtlich
+          erforderliche Restdaten können für einen begrenzten Zeitraum
+          vorgehalten werden, soweit dies zur Sicherheit, Missbrauchsprävention,
+          Fehleranalyse oder zur Erfüllung gesetzlicher Pflichten notwendig ist.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>8. Kontakt</h2>
+        <p>
+          Für Datenschutzanfragen, Support oder Löschanfragen:
+          <strong>TODO: Support-E-Mail eintragen</strong>
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>9. Wichtiger Hinweis</h2>
+        <p>
+          KINETIC ist eine Fitness-, Ernährungs- und Tracking-App. Die App
+          ersetzt keine medizinische Beratung, keine Diagnose und keine
+          Behandlung durch medizinisches Fachpersonal.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>10. Technische Einbindung in die App</h2>
+        <p>
+          Für die mobile App ist die URL über
+          <code>EXPO_PUBLIC_PRIVACY_POLICY_URL</code> vorgesehen. Erst nach dem
+          Veröffentlichen dieser Seite sollte die echte URL in App und Play
+          Console eingetragen werden.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
